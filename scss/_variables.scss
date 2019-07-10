@@ -1,0 +1,36 @@
+$mainColour: black;
+$secondaryColour: #c8c8c8;
+$basicColour: white;
+$borderSize:2px;
+$maxWidth: 100%;
+$navFont:'Oswald', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Carrois Gothic', sans-serif;
+$tabRadius: 10px 10px 0px 0px;
+$border: 1px solid $mainColour;
+
+@mixin h1 {
+    color: $mainColour;
+    background-color: $basicColour;
+    font-family: $secondaryFont;
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+@mixin h3 {
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: 100px;
+    background-color: white;
+    color: $mainColour;
+    margin-top: 10px;
+}
+
+@mixin h5 {
+    color: $mainColour;
+    background-color: white;
+    font-family: $mainFont;
+    font-size: 25px;
+    font-weight: 100px;
+    margin-top: 10px; 
+}
