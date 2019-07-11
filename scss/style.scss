@@ -1,0 +1,126 @@
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import 'grid';
+
+img{
+  width: auto;
+  max-width: 100%;
+}
+
+
+#pageContainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: $mainColour;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+}
+
+.sidebar{
+  .logo{
+    background-color: $mainColour;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    text-align: center;
+    max-height: 20vh;
+    height: 20vh;
+    @media (min-width: $lgWidth) {
+      position: relative;
+    }
+    img{
+      max-height: 100%;
+      @media (min-width: $mdWidth) {
+        max-width: 300px;
+      }
+    }
+  }
+  .order{
+    position: fixed;
+    height: 8vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @include footer;
+    @media (min-width: $lgWidth) {
+      position: relative;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+
+.mainContent{
+  padding-top: 27vh;
+  color: white;
+  background-color: white;
+  @media (min-width: $lgWidth) {
+    padding-top: 0;
+  }
+  .menu{
+    height: 65vh;
+    overflow: auto;
+    @media (min-width: $lgWidth) {
+      height: 80vh;
+      margin: 60px auto;
+    }
+  .row {
+      padding-bottom: 20px;
+      @include options;
+    }
+
+  }
+
+  .nav{
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: #808080;
+    @media (min-width: $lgWidth) {
+      position: static;
+    }
+    #hamburger{
+      .menuBar{
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px auto;
+        @media (min-width: $lgWidth) {
+          display: none;
+        }
+      }
+    }
+    ul{
+      display: none;
+      list-style: none;
+      list-style-position: inside;
+      @include dropDown;
+      @media (min-width: $lgWidth) {
+        display: block;
+      }
+      li{
+        text-align: center;
+        padding: 10px;
+        @media (min-width: $lgWidth) {
+          @include nav;
+        }
+      }
+    }
+  }
+}

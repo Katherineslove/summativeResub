@@ -1,6 +1,7 @@
 $mainColour: black;
 $secondaryColour: #c8c8c8;
 $basicColour: white;
+$darkGrey: #808080;
 $borderSize:2px;
 $maxWidth: 100%;
 $navFont:'Oswald', sans-serif;
@@ -32,5 +33,39 @@ $border: 1px solid $mainColour;
     font-family: $mainFont;
     font-size: 25px;
     font-weight: 100px;
-    margin-top: 10px; 
+    margin-top: 10px;
+}
+
+@mixin dropDown {
+    font-family: $navFont;
+    font-size: 23px;
+    font-weight: 100px;
+    background-color: #c8c8c8;
+    color: $mainColour;
+    margin-top: 10px;
+}
+
+@mixin footer {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  background-color: $darkGrey;
+  color: $basicColour;
+}
+
+@mixin options {
+  font-family: $mainFont;
+  font-size: 18px;
+  color: $mainColour;
+}
+
+@mixin nav {
+  display: inline;
+  font-family: $navFont;
+  float: left;
+  color: $mainColour;
+  text-decoration: none;
+  font-size: 21.65px;
+  background-color: $basicColour;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid $mainColour;
 }

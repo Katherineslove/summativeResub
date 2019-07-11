@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.row:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.col {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col1 {
+  width: 8.3333333333%;
+}
+
+.col2 {
+  width: 16.6666666667%;
+}
+
+.col3 {
+  width: 25%;
+}
+
+.col4 {
+  width: 33.3333333333%;
+}
+
+.col5 {
+  width: 41.6666666667%;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col7 {
+  width: 58.3333333333%;
+}
+
+.col8 {
+  width: 66.6666666667%;
+}
+
+.col9 {
+  width: 75%;
+}
+
+.col10 {
+  width: 83.3333333333%;
+}
+
+.col11 {
+  width: 91.6666666667%;
+}
+
+.col12 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .colM1 {
+    width: 8.3333333333%;
+  }
+
+  .colM2 {
+    width: 16.6666666667%;
+  }
+
+  .colM3 {
+    width: 25%;
+  }
+
+  .colM4 {
+    width: 33.3333333333%;
+  }
+
+  .colM5 {
+    width: 41.6666666667%;
+  }
+
+  .colM6 {
+    width: 50%;
+  }
+
+  .colM7 {
+    width: 58.3333333333%;
+  }
+
+  .colM8 {
+    width: 66.6666666667%;
+  }
+
+  .colM9 {
+    width: 75%;
+  }
+
+  .colM10 {
+    width: 83.3333333333%;
+  }
+
+  .colM11 {
+    width: 91.6666666667%;
+  }
+
+  .colM12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .colL1 {
+    width: 8.3333333333%;
+  }
+
+  .colL2 {
+    width: 16.6666666667%;
+  }
+
+  .colL3 {
+    width: 25%;
+  }
+
+  .colL4 {
+    width: 33.3333333333%;
+  }
+
+  .colL5 {
+    width: 41.6666666667%;
+  }
+
+  .colL6 {
+    width: 50%;
+  }
+
+  .colL7 {
+    width: 58.3333333333%;
+  }
+
+  .colL8 {
+    width: 66.6666666667%;
+  }
+
+  .colL9 {
+    width: 75%;
+  }
+
+  .colL10 {
+    width: 83.3333333333%;
+  }
+
+  .colL11 {
+    width: 91.6666666667%;
+  }
+
+  .colL12 {
+    width: 100%;
+  }
+}
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+#pageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.sidebar .logo {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  max-height: 20vh;
+  height: 20vh;
+}
+@media (min-width: 1000px) {
+  .sidebar .logo {
+    position: relative;
+  }
+}
+.sidebar .logo img {
+  max-height: 100%;
+}
+@media (min-width: 600px) {
+  .sidebar .logo img {
+    max-width: 300px;
+  }
+}
+.sidebar .order {
+  position: fixed;
+  height: 8vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Carrois Gothic", sans-serif;
+  font-size: 18px;
+  background-color: #808080;
+  color: white;
+}
+@media (min-width: 1000px) {
+  .sidebar .order {
+    position: relative;
+  }
+}
+.sidebar .order .row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mainContent {
+  padding-top: 27vh;
+  color: white;
+  background-color: white;
+}
+@media (min-width: 1000px) {
+  .mainContent {
+    padding-top: 0;
+  }
+}
+.mainContent .menu {
+  height: 65vh;
+  overflow: auto;
+}
+@media (min-width: 1000px) {
+  .mainContent .menu {
+    height: 80vh;
+    margin: 60px auto;
+  }
+}
+.mainContent .menu .row {
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+.mainContent .nav {
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  height: 6vh;
+  width: 100%;
+  background-color: #808080;
+}
+@media (min-width: 1000px) {
+  .mainContent .nav {
+    position: static;
+  }
+}
+.mainContent .nav #hamburger .menuBar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px auto;
+}
+@media (min-width: 1000px) {
+  .mainContent .nav #hamburger .menuBar {
+    display: none;
+  }
+}
+.mainContent .nav ul {
+  display: none;
+  list-style: none;
+  list-style-position: inside;
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+  font-weight: 100px;
+  background-color: #c8c8c8;
+  color: black;
+  margin-top: 10px;
+}
+@media (min-width: 1000px) {
+  .mainContent .nav ul {
+    display: block;
+  }
+}
+.mainContent .nav ul li {
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 1000px) {
+  .mainContent .nav ul li {
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-size: 21.65px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid black;
+  }
+}
