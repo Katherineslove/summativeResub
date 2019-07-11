@@ -23,7 +23,20 @@ img{
 
 .container{
   position: relative;
-}
+  .image{
+    display: none;
+    float: left;
+    @media (min-width: $lgWidth) {
+      display: block;
+      z-index: 0;
+      float: left;
+      margin-top: 36%;
+      left: 18.7%;
+      position: fixed;
+      transform: scale(1.3);
+      }
+    }
+  }
 
 .sidebar{
   .logo{
@@ -41,7 +54,10 @@ img{
     img{
       max-height: 100%;
       @media (min-width: $mdWidth) {
-        max-width: 300px;
+        max-width: 410px;
+      }
+      @media (min-width: $lgWidth) {
+        max-width: 454px;
       }
     }
   }
@@ -60,6 +76,9 @@ img{
       display: flex;
       align-items: center;
       height: 100%;
+      @media (min-width: $lgWidth) {
+        font-size: 22px;
+      }
     }
   }
 }
@@ -75,12 +94,16 @@ img{
     height: 65vh;
     overflow: auto;
     @media (min-width: $lgWidth) {
-      height: 80vh;
+      height: 100vh;
       margin: 60px auto;
     }
   .row {
       padding-bottom: 20px;
       @include options;
+      @media (min-width: $lgWidth) {
+        font-size: 20px;
+        padding-bottom: 40px;
+      }
     }
 
   }
@@ -94,6 +117,8 @@ img{
     background-color: #808080;
     @media (min-width: $lgWidth) {
       position: static;
+      height: 3vh;
+      background-color: white;
     }
     #hamburger{
       .menuBar{
@@ -119,6 +144,10 @@ img{
         padding: 10px;
         @media (min-width: $lgWidth) {
           @include nav;
+        }
+        a {
+        color: black;
+        text-decoration: none;
         }
       }
     }
