@@ -280,6 +280,12 @@ img {
     padding-bottom: 40px;
   }
 }
+@media (min-width: 1000px) {
+  .mainContent .menu .row img {
+    position: sticky;
+    transform: scale(0.65);
+  }
+}
 .mainContent .nav {
   position: fixed;
   top: 20vh;

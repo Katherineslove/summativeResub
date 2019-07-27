@@ -97,12 +97,19 @@ img{
       height: 100vh;
       margin: 60px auto;
     }
+
   .row {
       padding-bottom: 20px;
       @include options;
       @media (min-width: $lgWidth) {
         font-size: 20px;
         padding-bottom: 40px;
+      }
+      img {
+        @media (min-width: $lgWidth) {
+          position: sticky;
+          transform: scale(0.65);
+        }
       }
     }
 
